@@ -1,0 +1,25 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab_W13</title>
+</head>
+<body>
+    <p id="ans"></p>
+    <script>
+        let sentence = prompt( "input data" );
+        let chr = prompt( "input a char to search" );
+        let idx = -1;
+        let pos = "";
+        do{
+            idx = sentence.indexOf( chr, idx+1 );
+            if( idx!=-1)
+                pos += (idx + " \n");
+        }while( idx>0 );
+        document.getElementById( "ans" ).innerHTML = pos;
+    </script>
+</body>
+</html>
+
+<!-- Houson, we have a problem. -->
